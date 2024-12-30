@@ -1,0 +1,70 @@
+
+  <style>
+    /* Custom styles for sidebar */
+    #sidebar {
+      min-height: 100vh;
+      width: 250px; /* Adjust sidebar width */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+    }
+
+    #top-section {
+      flex-grow: 1;
+    }
+
+    #botton-section {
+      margin-top: auto;
+    }
+
+    #sidebar img {
+      width: 100%; /* Make logo span the width of the sidebar */
+      max-height: 100px; /* Optional: Limit the height */
+      object-fit: contain; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add spacing below the logo */
+    }
+  </style>
+
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-light border-end p-3">
+      <!-- Logo Section -->
+      <img src="logo.png" alt="FreToDo"> <!-- Replace 'logo.png' with your logo file path -->
+
+      <!-- Top Section -->
+      <div id= "top-section" >
+        <h5>Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Bottom Section -->
+      <div id="bottom-section">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="btn btn-outline-primary w-100" href="#">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-danger w-100" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 p-3">
+      <h1>Main Content</h1>
+      <%= yield %>
+    </div>
+  </>
