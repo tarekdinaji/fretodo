@@ -13,4 +13,10 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap"
+@import "bootstrap";
+
+.center-top-form {
+  display: grid;
+  place-items: center;
+  height: 80vh; 
+}

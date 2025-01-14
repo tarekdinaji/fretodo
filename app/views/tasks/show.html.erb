@@ -1,0 +1,10 @@
+<h3><%= (@task.category&.name&.upcase || "Unknown Category") %> Task </h3>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @task&.title %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Status: <%= @task&.task_status %></h6>
+    <p class="card-text">Desctiption: <%= @task.description %></p>
+    <a href="#" class="card-link"> Assign to </a>
+    <a href="#" class="card-link"> Delete </a>
+  </div>
+</div>

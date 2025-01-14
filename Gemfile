@@ -72,4 +72,4 @@ end
 
 gem "bootstrap"
 gem "sassc-rails"
-gem "devise"
+gem 'devise'
